@@ -10,14 +10,13 @@
 <div align='center'>
   <img src=https://img.shields.io/badge/mac|linux|win-pass-brightgreen.svg >
   <img src=https://img.shields.io/badge/device-GPU/CPU-yellow.svg >
-  <img src=https://img.shields.io/badge/license-GPLv3-blue.svg >
   <img src=https://img.shields.io/badge/onnxruntime-1.10.0-turquoise.svg >
   <img src=https://img.shields.io/badge/mnn-1.2.0-hotpink.svg >
   <img src=https://img.shields.io/badge/ncnn-1.0.21-orange.svg >
   <img src=https://img.shields.io/badge/tnn-0.3.0-blue.svg >
 </div>   
 
-🛠**Lite.Ai.ToolKit**: A lite C++ toolkit of awesome AI models, such as [Object Detection](#lite.ai.toolkit-object-detection), [Face Detection](#lite.ai.toolkit-face-detection), [Face Recognition](#lite.ai.toolkit-face-recognition), [Segmentation](#lite.ai.toolkit-segmentation), [Matting](#lite.ai.toolkit-matting), etc. See [Model Zoo](#lite.ai.toolkit-Model-Zoo) and [ONNX Hub](https://github.com/DefTruth/lite.ai.toolkit/tree/main/docs/hub/lite.ai.toolkit.hub.onnx.md), [MNN Hub](https://github.com/DefTruth/lite.ai.toolkit/tree/main/docs/hub/lite.ai.toolkit.hub.mnn.md), [TNN Hub](https://github.com/DefTruth/lite.ai.toolkit/tree/main/docs/hub/lite.ai.toolkit.hub.tnn.md), [NCNN Hub](https://github.com/DefTruth/lite.ai.toolkit/tree/main/docs/hub/lite.ai.toolkit.hub.ncnn.md). [❤️ Star 🌟👆🏻 this repo to support me if it does any helps to you, thanks ~ ]
+🛠**Lite.Ai.ToolKit**: A lite C++ toolkit of awesome AI models, such as [Object Detection](#lite.ai.toolkit-object-detection), [Face Detection](#lite.ai.toolkit-face-detection), [Face Recognition](#lite.ai.toolkit-face-recognition), [Segmentation](#lite.ai.toolkit-segmentation), [Matting](#lite.ai.toolkit-matting), etc. See [Model Zoo](#lite.ai.toolkit-Model-Zoo) and [ONNX Hub](https://github.com/DefTruth/lite.ai.toolkit/tree/main/docs/hub/lite.ai.toolkit.hub.onnx.md), [MNN Hub](https://github.com/DefTruth/lite.ai.toolkit/tree/main/docs/hub/lite.ai.toolkit.hub.mnn.md), [TNN Hub](https://github.com/DefTruth/lite.ai.toolkit/tree/main/docs/hub/lite.ai.toolkit.hub.tnn.md), [NCNN Hub](https://github.com/DefTruth/lite.ai.toolkit/tree/main/docs/hub/lite.ai.toolkit.hub.ncnn.md). (❤️ Star 🌟👆🏻 this repo to support me if it does any helps to you, thanks ~)
 
 <div align='center'>
   <img src='logs/test_lite_yolov5_1.jpg' height="90px" width="90px">
@@ -50,41 +49,23 @@
 
 <p align="center">English | <a href="README.zh.md">中文文档</a> | <a href=#lite.ai.toolkit-Build-MacOS>MacOS</a> | <a href=#lite.ai.toolkit-Build-Linux>Linux</a> | <a href=#lite.ai.toolkit-Build-Windows>Windows</a> </p>
 
-
-## 重要通知 (Important Note) !!! 🔥🔥🔥
-
-中文简体：本项目将不再频繁更新，更优的部署体验请尝试[⚡️PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy) : ⚡️一款简单易用的推理部署工具箱。覆盖业界主流优质预训练模型并提供开箱即用的开发体验，包括图像分类、目标检测、图像分割、人脸检测、人体关键点识别、文字识别等多任务，满足开发者多场景，多硬件、多平台的快速部署需求，并同时支持 **C++** 和 **Python** 两种语言。**lite.ai.toolkit** 中的核心模型未来将会以contrib的方式集成到[⚡️PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy) 中。欢迎同学们使用 ✋👉[⚡️PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy).
-
-----
-
-English: This project will no longer be updated frequently. For a better deployment experience, please try [⚡️PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy): ⚡️An Easy-to-use and Fast Deep Learning Model Deployment Toolkit. Covering the industry's mainstream high-quality pre-training models and providing out-of-the-box development experience, including image classification, object detection, image segmentation, face detection, human key point detection, text recognition and so on, to meet the needs of developers in multiple scenarios and multiple hardware, multi-platform deployment requirements. Furthermore, FastDeploy supports both **C++** and **Python** languages. The core models in **lite.ai.toolkit** will be integrated into [⚡️PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy) in a contrib way in the future. Welcome to use ✋👉[⚡️PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy).
-
-----
-
-- [⚡️PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy) 近期更新 🔥🔥🔥
-
-  - 🔥 **2022.8.18：发布FastDeploy [release/v0.2.0](https://github.com/PaddlePaddle/FastDeploy/)** 
-    - **服务端全新升级：一套SDK，覆盖全量模型**
-      - 发布基于x86 CPU、NVIDIA GPU的易用、高性能推理引擎SDK，推理速度大幅提升
-      - 支持ONNXRuntime、Paddle Inference、TensorRT推理引擎
-      - 支持YOLOv7、YOLOv6、YOLOv5、PP-YOLOE等目标检测最优模型及[Demo示例](https://github.com/PaddlePaddle/FastDeploy/tree/develop/examples/vision/detection/)
-      - 支持人脸检测、人脸识别、实时人像抠图、图像分割等40+重点模型及[Demo示例](https://github.com/PaddlePaddle/FastDeploy/tree/develop/examples/vision/)
-      - 支持Python API 和 C++ API
-      - 开发AI模型部署代码量减少～60%
-    - **端侧继ARM CPU后，延伸至瑞芯微、晶晨、恩智浦等NPU能力**
-      - 发布轻量化目标检测 [Picodet-NPU部署Demo](https://github.com/PaddlePaddle/Paddle-Lite-Demo/tree/develop/object_detection/linux/picodet_detection) ，提供低门槛INT8全量化能力
-    - **同时支持Python和C++两种语言** 
-      - 支持 `pip install` 一行命令安装，Linux/Mac/Windows 快速使用
-      - 提供 Linux/Mac/Windows，CPU/GPU 等多平台多硬件支持的C++预编译库
-- 更多详情请跳转✋👉[⚡️PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy) 🎉🎉
-----
-
-## Core Features 👏👋
+## Features 👏👋
 <div id="lite.ai.toolkit-Core-Features"></div>
 
 * **Simply and User friendly.** Simply and Consistent syntax like **lite::cv::Type::Class**, see [examples](#lite.ai.toolkit-Examples-for-Lite.AI.ToolKit).
 * **Minimum Dependencies.** Only **OpenCV** and **ONNXRuntime** are required by default, see [build](#lite.ai.toolkit-Build-Lite.AI.ToolKit).
 * **Lots of Algorithm Modules.** Contains almost **[300+](https://github.com/DefTruth/lite.ai.toolkit/tree/main/docs/hub/lite.ai.toolkit.hub.onnx.md)** C++ re-implementations and **[500+](https://github.com/DefTruth/lite.ai.toolkit/tree/main/docs/hub/lite.ai.toolkit.hub.onnx.md)** weights.
+
+## Tools
+
+| About Training 🤓 | About Visualizing ☕️ | For Better Performance 🔥| Build Status 👀 | 
+|:---:|:---:|:---:| :---:|
+| [DefTruth/torchlm](https://github.com/DefTruth/torchlm) | [DefTruth/netron-vscode-extension](https://github.com/DefTruth/netron-vscode-extension) | [⚡️PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy) | ✅ |
+
+- [torchlm](https://github.com/DefTruth/torchlm): A high level Training and Evaluating Toolkit for Face Landmarks Detection is available at [torchlm](https://github.com/DefTruth/torchlm). 
+- [netron-vscode-extension](https://github.com/DefTruth/netron-vscode-extension): A vscode extension for netron is avaliable at [netron-vscode-extension](https://github.com/DefTruth/netron-vscode-extension), support *.pdmodel, *.nb, *.onnx, *.pb, *.h5, *.tflite, *.pth, *.pt, *.mnn, *.param, etc.
+- [FastDeploy](https://github.com/PaddlePaddle/FastDeploy): For better deployment experience, please try [PaddlePaddle/FastDeploy](https://github.com/PaddlePaddle/FastDeploy). ⚡️FastDeploy is an **Easy-to-use** and **High Performance** AI model deployment toolkit for Cloud, Mobile and Edge with 📦out-of-the-box and unified experience, 🔚end-to-end optimization for over 🔥160+ Text, Vision, Speech and Cross-modal AI models. Support C, C++, Java, Python, CSharp etc.
+
 
 ## Citations 🎉🎉
 
@@ -98,8 +79,6 @@ Consider to cite it as follows if you use **Lite.Ai.ToolKit** in your projects.
   year={2021}
 }
 ```
-## About Training 🤓👀  
-A high level Training and Evaluating Toolkit for Face Landmarks Detection is available at [torchlm](https://github.com/DefTruth/torchlm). 
 
 ## Downloads & RoadMap ✅  
 
