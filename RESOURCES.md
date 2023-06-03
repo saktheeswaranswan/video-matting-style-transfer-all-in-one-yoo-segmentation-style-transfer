@@ -97,12 +97,5 @@
 
 ## examples
 
-![test_lite_age_googlenet](https://github.com/DefTruth/lite.ai.toolkit/assets/31974251/e7be48f4-8825-4cc7-939c-1a57face062a)
-<img width="242" alt="test_lite_arcface_resnet_0" src="https://github.com/DefTruth/lite.ai.toolkit/assets/31974251/b262b4cd-c4bf-42c6-9cdc-e51fd38299a7">
-<img width="134" alt="test_lite_arcface_resnet_1" src="https://github.com/DefTruth/lite.ai.toolkit/assets/31974251/3b660617-c5c9-46dc-a314-f12c1bb3648c">
-![test_lite_arcface_resnet_2](https://github.com/DefTruth/lite.ai.toolkit/assets/31974251/ac86ff2f-b235-43c8-a9d1-8dab6599c953)
-![test_lite_colorizer_1](https://github.com/DefTruth/lite.ai.toolkit/assets/31974251/b69d729b-a930-4950-b1bd-461a4b624c14)
-![test_lite_colorizer_2](https://github.com/DefTruth/lite.ai.toolkit/assets/31974251/fa49af35-4e46-49b2-9f0e-a15842df817a)
-![test_lite_colorizer_3](https://github.com/DefTruth/lite.ai.toolkit/assets/31974251/00b6b47c-830d-425a-86d4-bfe0efc86a44)
 
 
